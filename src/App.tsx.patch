@@ -1,0 +1,19 @@
+
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound';
+ import CustomersPage from './pages/CustomersPage';
+ import DatasetsPage from './pages/DatasetsPage';
+ import UploadPage from './pages/UploadPage';
++import ModelTrainingPage from './pages/ModelTrainingPage';
+ import CustomerDetailsPage from './pages/CustomerDetailsPage';
+ import ModelDetailsPage from './pages/ModelDetailsPage';
+ import SettingsPage from './pages/SettingsPage';
+@@ -22,6 +23,7 @@ function App() {
+         <Route path="/customers" element={<CustomersPage />} />
+         <Route path="/datasets" element={<DatasetsPage />} />
+         <Route path="/upload" element={<UploadPage />} />
++        <Route path="/train-model" element={<ModelTrainingPage />} />
+         <Route path="/customers/:id" element={<CustomerDetailsPage />} />
+         <Route path="/models/:id" element={<ModelDetailsPage />} />
+         <Route path="/settings" element={<SettingsPage />} />

@@ -1,0 +1,13 @@
+
+--- a/src/components/Header.tsx
++++ b/src/components/Header.tsx
+@@ -47,6 +47,9 @@ const Header = () => {
+             <NavigationMenuItem>
+               <NavigationMenuLink asChild><Link to="/upload" className={itemClass}>Upload Data</Link></NavigationMenuLink>
+             </NavigationMenuItem>
++            <NavigationMenuItem>
++              <NavigationMenuLink asChild><Link to="/train-model" className={itemClass}>Train Model</Link></NavigationMenuLink>
++            </NavigationMenuItem>
+             <NavigationMenuItem>
+               <NavigationMenuLink asChild><Link to="/settings" className={itemClass}>Settings</Link></NavigationMenuLink>
+             </NavigationMenuItem>
